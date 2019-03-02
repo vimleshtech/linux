@@ -1,0 +1,163 @@
+
+https://aws.amazon.com/console/
+
+ec2-35-161-161-247.us-west-2.compute.amazonaws.com
+Administrator
+8cLwocu3x)r
+
+
+Setup the new environment for Linux and windows
+======================================================
+======================================================
+$cal			: return current calendar
+$date 			: return current date
+$pwd			: working directory
+$ll			: long list 
+$ls			: short list 
+$mkdir   dirname	: create new folder/directory 
+$cd   dirname		: change directory 
+$cd   ~			: go to root/home 
+$cd   ..		: go one directory back 
+$cd   -			: go to previous directory 
+$cat  > filname		: create new file
+
+ctlr+z		: to save the file
+	
+$cat   filname		: show content 	
+$cat   filname >> nefile: copy existing to new file 	
+$rm filename		: remove file 
+$cp src dest		: copy source to destination 
+$mv src dest		: cut from source and paste to destination 
+$nanot 	filename.txt	: create or edit file 
+
+
+$sudo  apt-get update	:	sudo (andmin user)		
+$sudo  yum update 
+
+$sudo  apt-get install 	mysql-server
+$sudo  apt-get install  python3
+$sudo  apt-get install 
+
+
+
+User and its Permission
+=============================
+drwxrwxrwx 2 ubuntu ubuntu 4096 Mar  2 07:44 dir1/
+drwxrwxr-x 2 ubuntu ubuntu 4096 Mar  2 07:40 dir2/
+-rw-rw-r-- 1 ubuntu ubuntu    5 Mar  2 07:56 test.txt
+
+d - directory 
+- - file 
+
+rwx (1st) : user
+rwx (2nd) : group
+rwx (3rd) : other 
+
+r  - read
+w  - write
+x  - execute 
+-  - no access 
+
+-rwxr--r--
+
+
+Octal Permission:
+=======================
+7 : full permision
+
+4 : read
+2 : write
+1 : execute 
+
+
+$chmod 777  file/folder...
+       ugo
+
+
+Git
+========================================================
+$sudo apt-get install git-core
+
+
+ubuntu@ip-172-31-26-210:~/test/linux$ history
+    1  pwd
+    2  history
+    3  cal
+    4  date
+    5  pwd
+    6  cd /etc/
+    7  ll
+    8  ls
+    9  ll
+   10  ls
+   11  cd ..
+   12  cd ~
+   13  pwd
+   14  mkdir test
+   15  ll
+   16  pwd
+   17  cd test/
+   18  pwd
+   19  cd ..
+   20  cd test/
+   21  cd ~
+   22  cd -
+   23  cat > emp.txt
+   24  ls
+   25  cat emp.txt
+   26  cat emp.txt  >> nefile.txt
+   27  ls
+   28  cat nefile.txt
+   29  rm nefile.txt
+   30  ls
+   31  mkdir dir1
+   32  mkdir dir2
+   33  ls
+   34  cp emp.txt dir2/f2.txt
+   35  ls
+   36  cd dir2
+   37  ls
+   38  cat f2.txt
+   39  cd .
+   40  ls
+   41  cd ..
+   42  ls
+   43  mv emp.txt dir1/
+   44  ls
+   45  cd dir1
+   46  ls
+   47  cat emp.txt
+   48  nano emp.txt
+   49  cat emp.txt
+   50  nano notes.txt
+   51  ls
+   52  sudo apt-get update
+   53  sudo apt-get instal mysql-server
+   54  sudo apt-get install mysql-server
+   55  sudo apt-get install pytho3
+   56  sudo apt-get install python3
+   57  python3
+   58  cd ..
+   59  ls
+   60  cat >test.txt
+   61  ls
+   62  l
+   63  ll
+   64  drwxrwxr-x 2 ubuntu ubuntu 4096 Mar  2 07:44 dir1/
+   65  drwxrwxr-x 2 ubuntu ubuntu 4096 Mar  2 07:40 dir2/
+   66  -rw-rw-r-- 1 ubuntu ubuntu    5 Mar  2 07:56 test.txt
+   67  ll
+   68  sudo chmod 777 test.txt
+   69  ll
+   70  sudo chmod g-wx test.txt
+   71  ll
+   72  sudo apt-get install git-core
+   73  git clone https://github.com/vimleshtech/linux
+   74  ll
+   75  cd linux/
+   76  ll
+   77  history
+ubuntu@ip-172-31-26-210:~/test/linux$
+
+
+
