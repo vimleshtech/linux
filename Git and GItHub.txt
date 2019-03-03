@@ -1,0 +1,71 @@
+CI-CD
+========================
+CI : countious integration and version control tool 
+
+	Git(version control)  and GitHub(distributed version control)
+
+	Git on linux / mac:
+		$sudo apt-get install git-core
+	Git on Windows:
+		download the git.exe and install 
+		
+	
+	
+	GitHub: signup here 
+		https://github.com/
+
+
+	
+
+Git Life Cycle
+=========================
+git init  -> git add -> git commit -> git push    -> git clone 
+
+git init 	: create/initialize local repository 
+git add 	: add files and folder and data to repository for version control 
+git  commit     : save the files and folder and data to local repository 
+git push 	: upload/send the files and folder and data to github/remote server
+
+
+
+git status : show list of files and folder which are in directory with thier status
+git add -A 	: add all to stage (for tracking)
+or
+git add file1.xt file2.txt
+
+git commit -m "comments/message"
+
+
+git reset filepath/name
+
+
+
+git remote add <alias> https://github.com/vimleshtech/mytest.git
+git push -u <alias> master
+
+
+	
+=====
+  501  cd "C:\Users\vkumar15\eclipse\VersionControl"
+  502  dir
+  503  ll
+  504  git init
+  505  git status
+  506  git add -A
+  507  git status
+  508  git status
+  509  git add -A
+  510  git status
+  511  git commit -m "my first code"
+  512  git status
+  513  git log
+  514  git status
+  515  git diff src/main/webapp/index.jsp
+  516  git add -A
+  517  git status
+  518  git commit -m "2nd change"
+  519  git log
+  520  git remote add server https://github.com/vimleshtech/mytest.git
+  521  git push -u server master
+  522  history
+
